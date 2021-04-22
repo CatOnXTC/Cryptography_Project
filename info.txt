@@ -1,0 +1,23 @@
+Szyfrator:
+Szyfrator ten wczytuje z wybranego pliku znak po znaku, a następnie odczytuje ciąg klucza i przekształca go na jedną liczbę typu integer.
+Następnie obie te wartości są ze sobą xorowane. W ten sposób można wykonać operację xor na każdym bicie podanego tekstu.
+Pozwala to zakodować tekst jawny lub przy wykorzystaniu tego samego klucza odkodować tekst zakodowany.
+Jeżeli kod jest zbyt krótki to zostaje on zapętlony.
+Przy szyfrowaniu z pomocą generatora tworzona jest ilość bitów odpowiednia do długości podanego tekstu.
+
+Generator:
+Kaskada Gollmanna to generator liczb pseudolosowych wykorzystujący rejestry LFSR.
+Rejestry te są ze sobą połączone ciągiem i każdy rejestr steruje zegarem następnego rejestru. Oznacza to, że rejestr n wykonuje operację jeżeli rejestr n-1 ma na wyjściu 1.
+Wynikiem generatora są wyniki wyjścia ostatniego rejestru.
+
+Testy:
+Test pojedynczych bitów sprawdza, czy pojedyncze bity w kodzie występują odpowiednią ilość razy.
+Test serii sprawdza czy ciągi zer i jedynek o długości 1, 2, 3, 4, 5 oraz 6 i dłuższe występują odpowiednią ilość razy.
+Test długich serii sprawdza czy najdłuższy ciąg zer oraz jedynek nie przekracza danej długości.
+Test pokerowy sprawdza, czy różne, czterocyfrowe ciągi występują odpowiednia ilość razy.
+
+Steganografia:
+Tekst wczytany z wybranego pliku zostaje ukryty w wybranym pliku.
+Dzieje się to poprzez rozłożenie tekstu na bity, a następnie podmienianie najmniej znaczących bitów w docelowym pliku poprzez bity tekstu.
+Tekst może być przy tym jawny lub zaszyfrowany.
+Wczytywanie pliku działa w ten sam sposób tylko w drugą stronę. To znaczy, że najmniej znaczące bity pobierane są z pliku i zapisywane jako tekst po konwersji na bajty.

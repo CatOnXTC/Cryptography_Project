@@ -1,0 +1,22 @@
+Wciskając "Informacje" pojawią się dodatkowe informacje na temat działania algorytmu.
+
+W polu tekstowym można wpisać nazwę pliku który ma zostać utworzony. Może on zawierać jedynie litery alfabetu łacińskiego, cyfry oraz spacje. Plik automatycznie zapisywany zostaje z rozszerzeniem .txt.
+Jeżeli przetwarzany jest tekst zapisany zostanie w utworzonym folderze "text". W przypadku generacji kodu od nowa klucz zapisany zostanie w folderze "keys", a kod "code".
+W polu "Ile znaków wygenerować" można podać długość ciągu do wygenerowania. Może ona wynosić od 1 do 1000000. Przy braku wprowadzenia generowany jest ciąg o długości 1.
+W polu "Ile rejestrów wykorzystać" można podać ilość rejestrów do wykorzystania. Może ona wynosić od 3 do 17. Przy nieprawidłowym wprowadzeniu wykorzystane zostaną 3 rejestry.
+
+Za pomocą przycisku "wybierz plik z tekstem" można wybrać zaszyfrowany lub jawny plik tekstowy, który można będzie zaszyfrować lub odszyfrować.
+Za pomocą przycisku "wybierz plik z kluczem" można wybrać plik tekstowy, który będzie kluczem wedle którego zaszyfrowany lub odszyfrowany zostanie wczytany tekst.
+
+Przycisk "Zaszyfruj/Odszyfruj" pozwala na zaszyfrowanie lub odszyfrowanie wczytanego pliku za pomocą wczytanego klucza.
+Przycisk "Zaszyfruj/Odszyfruj z generatorem" pozwala na zaszyfrowanie lub odszyfrowanie wczytanego pliku. Podczas tej operacji kod generowany jest na podstawie wczytanego klucza za pomocą generatora.
+Przycisk "Nowa generacja Kodu" generuje ciąg o podanej długości z wykorzystaniem podanej liczby rejestrów i zapisuje go do pliku o podanej nazwie w folderze "code". Dodatkowo zapisuje klucz w pliku o podanej nazwie w folderze "keys".
+
+Przycisk "Test pojedynczych bitów" wykonuje na wczytanym kodzie test pojedynczych bitów.
+Przycisk "Test serii" wykonuje na wczytanym kodzie test serii.
+Przycisk "Test długich serii" wykonuje na wczytanym kodzie test długich serii.
+Przycisk "Test pokerowy" wykonuje na wczytanym kodzie test pokerowy.
+
+Przycisk "Schowaj w obrazie" pozwala na wybór pliku bmp, png, jpg lub pdf i chowa w nim wybrany wcześniej plik z tekstem. Generowany jest przy tym efekt wyjściowy oraz odpowiedni klucz z wyznaczoną nazwą w przygotowanych wcześniej folderach.
+Przycisk "Znajdź w obrazie" pozwala na wybór pliku bmp, png, jpd lub pdf w którym będzie szukany tekst. Jeżeli nie podano pliku z kluczem efekt może odbiegać od oczekiwanego, lecz program będzie próbował znaleźć tekst. Wynik działania jest zapisany pod podaną nazwą w folderze "text".
+Przycisk "Wyświetl obraz" pozwala wybrać plik który o ile jest taka możliwość zostanie wyświetlony jako popup.
